@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرم مشاوره - تماس با ما</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="gradient-bg min-h-screen py-8 px-4">
+    <!-- Background Decorative Elements -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-20 left-20 w-32 h-32 bg-white opacity-10 rounded-full floating-animation"></div>
+        <div class="absolute top-40 right-32 w-24 h-24 bg-white opacity-5 rounded-full floating-animation"
+            style="animation-delay: -2s;"></div>
+        <div class="absolute bottom-32 left-40 w-40 h-40 bg-white opacity-5 rounded-full floating-animation"
+            style="animation-delay: -4s;"></div>
+    </div>
+
+    <div class="max-w-4xl mx-auto relative z-10">
+        <!-- Header Section -->
+        <div class="text-center mb-12">
+            <div class="inline-block p-4 glass-effect rounded-full mb-6 pulse-glow">
+                <i class="fas fa-comments text-4xl text-white icon-bounce"></i>
+            </div>
+            <h1 class="text-5xl font-bold text-white mb-4">مشاوره رایگان</h1>
+            <p class="text-xl text-white opacity-90">با ما در تماس باشید و از تجربه متخصصان بهره‌مند شوید</p>
+        </div>
+
+        <!-- Main Form Container -->
+        <div class="glass-effect rounded-3xl p-8 md:p-12 shadow-2xl">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info Side -->
+                <div class="space-y-8">
+                    <h2 class="text-3xl font-bold text-white mb-8">
+                        <i class="fas fa-star text-yellow-400 ml-3"></i>
+                        چرا ما را انتخاب کنید؟
+                    </h2>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 space-x-reverse p-4 bg-white bg-opacity-10 rounded-xl">
+                            <div class="bg-green-500 p-3 rounded-full">
+                                <i class="fas fa-clock text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-semibold">پاسخگویی ۲۴ ساعته</h3>
+                                <p class="text-white opacity-80 text-sm">در کمتر از ۲ ساعت پاسخ می‌دهیم</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 space-x-reverse p-4 bg-white bg-opacity-10 rounded-xl">
+                            <div class="bg-blue-500 p-3 rounded-full">
+                                <i class="fas fa-user-tie text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-semibold">متخصصان مجرب</h3>
+                                <p class="text-white opacity-80 text-sm">بیش از ۱۰ سال تجربه در این حوزه</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 space-x-reverse p-4 bg-white bg-opacity-10 rounded-xl">
+                            <div class="bg-purple-500 p-3 rounded-full">
+                                <i class="fas fa-gift text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-semibold">مشاوره رایگان</h3>
+                                <p class="text-white opacity-80 text-sm">اولین جلسه مشاوره کاملاً رایگان</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Methods -->
+                    <div class="mt-8 p-6 bg-white bg-opacity-10 rounded-xl">
+                        <h3 class="text-white font-bold mb-4">راه‌های تماس مستقیم:</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center text-white">
+                                <i class="fas fa-phone ml-3 text-green-400"></i>
+                                <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+                            </div>
+                            <div class="flex items-center text-white">
+                                <i class="fas fa-envelope ml-3 text-blue-400"></i>
+                                <span>info@example.com</span>
+                            </div>
+                            <div class="flex items-center text-white">
+                                <i class="fab fa-telegram ml-3 text-cyan-400"></i>
+                                <span>@imjodaki</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div>
+                    <form id="consultationForm" class="space-y-6">
+                        <div>
+                            <label class="block text-white font-semibold mb-2">
+                                <i class="fas fa-user ml-2"></i>نام و نام خانوادگی
+                            </label>
+                            <input type="text" id="fullName" required
+                                class="w-full p-4 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-xl text-white placeholder-white placeholder-opacity-70 input-focus focus:outline-none focus:border-white focus:border-opacity-50"
+                                placeholder="نام کامل خود را وارد کنید">
+                        </div>
+
+                        <div>
+                            <label class="block text-white font-semibold mb-2">
+                                <i class="fas fa-phone ml-2"></i>شماره تماس
+                            </label>
+                            <input type="tel" id="phone" required
+                                class="w-full p-4 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-xl text-white placeholder-white placeholder-opacity-70 input-focus focus:outline-none focus:border-white focus:border-opacity-50"
+                                placeholder="۰۹۱۲۳۴۵۶۷۸۹">
+                        </div>
+
+                        <div>
+                            <label class="block text-white font-semibold mb-2">
+                                <i class="fas fa-envelope ml-2"></i>ایمیل (اختیاری)
+                            </label>
+                            <input type="email" id="email"
+                                class="w-full p-4 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-xl text-white placeholder-white placeholder-opacity-70 input-focus focus:outline-none focus:border-white focus:border-opacity-50"
+                                placeholder="example@email.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-white font-semibold mb-2">
+                                <i class="fas fa-list ml-2"></i>نوع مشاوره
+                            </label>
+                            <select id="consultationType" required
+                                class="w-full p-4 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-xl text-white input-focus focus:outline-none focus:border-white focus:border-opacity-50">
+                                <option value="" class="text-gray-800">انتخاب کنید...</option>
+                                <option value="business" class="text-gray-800">مشاوره کسب و کار</option>
+                                <option value="financial" class="text-gray-800">مشاوره مالی</option>
+                                <option value="legal" class="text-gray-800">مشاوره حقوقی</option>
+                                <option value="technical" class="text-gray-800">مشاوره فنی</option>
+                                <option value="other" class="text-gray-800">سایر موارد</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-white font-semibold mb-2">
+                                <i class="fas fa-clock ml-2"></i>زمان مناسب تماس
+                            </label>
+                            <select id="preferredTime" required
+                                class="w-full p-4 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-xl text-white input-focus focus:outline-none focus:border-white focus:border-opacity-50">
+                                <option value="" class="text-gray-800">انتخاب کنید...</option>
+                                <option value="morning" class="text-gray-800">صبح (۸-۱۲)</option>
+                                <option value="afternoon" class="text-gray-800">بعدازظهر (۱۲-۱۷)</option>
+                                <option value="evening" class="text-gray-800">عصر (۱۷-۲۱)</option>
+                                <option value="anytime" class="text-gray-800">هر زمان</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-white font-semibold mb-2">
+                                <i class="fas fa-comment-dots ml-2"></i>توضیحات (اختیاری)
+                            </label>
+                            <textarea id="description" rows="4"
+                                class="w-full p-4 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-xl text-white placeholder-white placeholder-opacity-70 input-focus focus:outline-none focus:border-white focus:border-opacity-50 resize-none"
+                                placeholder="در صورت تمایل، توضیح مختصری از موضوع مشاوره بنویسید..."></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold py-4 px-8 rounded-xl btn-hover focus:outline-none focus:ring-4 focus:ring-yellow-300 focus:ring-opacity-50">
+                            <i class="fas fa-paper-plane ml-2"></i>
+                            درخواست مشاوره رایگان
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage"
+                        class="success-message mt-6 p-6 bg-green-500 bg-opacity-20 border border-green-400 rounded-xl">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 text-2xl ml-3"></i>
+                            <div>
+                                <h3 class="text-white font-bold">درخواست شما با موفقیت ارسال شد!</h3>
+                                <p class="text-white opacity-90 text-sm mt-1">در کمتر از ۲ ساعت با شما تماس خواهیم گرفت.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="mt-12 text-center">
+            <div class="flex justify-center items-center space-x-8 space-x-reverse">
+                <div class="flex items-center text-white opacity-80">
+                    <i class="fas fa-shield-alt text-green-400 ml-2"></i>
+                    <span class="text-sm">اطلاعات محرمانه</span>
+                </div>
+                <div class="flex items-center text-white opacity-80">
+                    <i class="fas fa-award text-yellow-400 ml-2"></i>
+                    <span class="text-sm">مشاوران معتبر</span>
+                </div>
+                <div class="flex items-center text-white opacity-80">
+                    <i class="fas fa-thumbs-up text-blue-400 ml-2"></i>
+                    <span class="text-sm">رضایت ۱۰۰٪</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        (function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'960a0a0eb745e18d',t:'MTc1Mjc1ODQ1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();
+    </script>
+</body>
+
+</html>
